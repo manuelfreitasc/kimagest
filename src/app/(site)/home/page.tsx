@@ -5,6 +5,7 @@ import { AnimatedGroup } from "../../../components/motion-primitives/animated-gr
 import { LogoCloud } from "../../../components/logo-cloud";
 import Image from "next/image";
 import { TextEffect } from "../../../components/ui/text-effect";
+import YouTubePlayer from "@/components/YouTubePlayer";
 
 const transitionVariants = {
   item: {
@@ -118,14 +119,22 @@ export default function Home() {
                   ...transitionVariants,
                 }}
               >
-                <div className="-rotate-30 aspect-3/2 relative mx-auto lg:w-2/3">
-                  <div className="bg-linear-to-b to-background from-background absolute inset-0 via-transparent"></div>
-                  <div className="bg-linear-to-l to-background from-background absolute inset-0 via-transparent"></div>
-                  <Image
+                <div className=" aspect-3/2 relative mx-auto lg:w-2/3">
+                  <div className="z-50 bg-linear-to-b to-background from-background absolute inset-0 via-transparent"></div>
+                  <div className="z-50 bg-linear-to-l to-background from-background absolute inset-0 via-transparent"></div>
+                  {/* <Image
                     src="https://res.cloudinary.com/dg4jhba5c/image/upload/v1741605545/phone-backgroudn_xqgg5g.jpg"
                     alt="Phone Background"
                     width="6240"
                     height="4160"
+                  /> */}
+
+                  <YouTubePlayer
+                    videoId="dQw4w9WgXcQ" // Substitua pelo ID do vídeo real do Kimagest no YouTube
+                    title=""
+                    description=""
+                    autoPlay={true}
+                    muted={true}
                   />
                 </div>
               </AnimatedGroup>

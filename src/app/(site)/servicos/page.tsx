@@ -1,6 +1,40 @@
 import { Card, CardContent, CardHeader } from "../../../components/ui/card";
-import { Settings2, Sparkles, Zap } from "lucide-react";
+import { Settings2, Sparkles, Zap, Users, UserPlus, PiggyBank, FileText, FileSpreadsheet, BarChart } from "lucide-react";
 import { ReactNode } from "react";
+
+// Array de funcionalidades principais
+const funcionalidadesPrincipais = [
+  {
+    titulo: "Gestão de Utilizadores",
+    descricao: "Permite administrar acessos e permissões dos colaboradores, garantindo a segurança das informações.​",
+    icone: <Users className="size-6" aria-hidden />
+  },
+  {
+    titulo: "Gestão de Clientes",
+    descricao: "Facilita o cadastro e acompanhamento dos clientes, centralizando informações essenciais para um atendimento eficaz.​",
+    icone: <UserPlus className="size-6" aria-hidden />
+  },
+  {
+    titulo: "Gestão de Caixa",
+    descricao: "Oferece controle detalhado das entradas e saídas financeiras, auxiliando no monitoramento do fluxo de caixa da empresa.​",
+    icone: <PiggyBank className="size-6" aria-hidden />
+  },
+  {
+    titulo: "Emissão de Documentos Fiscais",
+    descricao: "Capacita a emissão de diversos documentos, tais como: Factura, Factura-Recibo, Nota de Crédito, Factura-Proforma.​",
+    icone: <FileText className="size-6" aria-hidden />
+  },
+  {
+    titulo: "Emissão de Ficheiro SAFT",
+    descricao: "Gera o ficheiro SAFT (Standard Audit File for Tax Purposes), facilitando a comunicação de dados fiscais às autoridades tributárias.​",
+    icone: <FileSpreadsheet className="size-6" aria-hidden />
+  },
+  {
+    titulo: "Emissão de Relatórios",
+    descricao: "Disponibiliza relatórios detalhados sobre as operações da empresa, fornecendo insights valiosos para a tomada de decisões estratégicas.",
+    icone: <BarChart className="size-6" aria-hidden />
+  }
+];
 
 export default function Features() {
   return (
@@ -11,64 +45,30 @@ export default function Features() {
       <div className="@container mx-auto max-w-5xl px-6 ">
         <div className="text-center">
           <h2 className="text-balance text-4xl font-semibold lg:text-5xl">
-            Built to cover your needs
+            Funcionalidades Principais
           </h2>
           <p className="mt-4">
-            Libero sapiente aliquam quibusdam aspernatur, praesentium iusto
-            repellendus.
+            Soluções completas para a gestão do seu negócio
           </p>
         </div>
-        <div className="@min-4xl:max-w-full @min-4xl:grid-cols-3 mx-auto mt-8 grid max-w-sm gap-6 *:text-center md:mt-16">
-          <Card className="group shadow-zinc-950/5">
-            <CardHeader className="pb-3">
-              <CardDecorator>
-                <Zap className="size-6" aria-hidden />
-              </CardDecorator>
+        <div className="@min-4xl:max-w-full @min-4xl:grid-cols-3 mx-auto mt-8 grid max-w-sm gap-6 *:text-center md:mt-16 md:max-w-none md:grid-cols-2 lg:grid-cols-3">
+          {funcionalidadesPrincipais.map((funcionalidade, index) => (
+            <Card key={index} className="group shadow-zinc-950/5">
+              <CardHeader className="pb-3">
+                <CardDecorator>
+                  {funcionalidade.icone}
+                </CardDecorator>
 
-              <h3 className="mt-6 font-medium">Customizable</h3>
-            </CardHeader>
+                <h3 className="mt-6 font-medium">{funcionalidade.titulo}</h3>
+              </CardHeader>
 
-            <CardContent>
-              <p className="text-sm">
-                Extensive customization options, allowing you to tailor every
-                aspect to meet your specific needs.
-              </p>
-            </CardContent>
-          </Card>
-
-          <Card className="group shadow-zinc-950/5">
-            <CardHeader className="pb-3">
-              <CardDecorator>
-                <Settings2 className="size-6" aria-hidden />
-              </CardDecorator>
-
-              <h3 className="mt-6 font-medium">You have full control</h3>
-            </CardHeader>
-
-            <CardContent>
-              <p className="mt-3 text-sm">
-                From design elements to functionality, you have complete control
-                to create a unique and personalized experience.
-              </p>
-            </CardContent>
-          </Card>
-
-          <Card className="group shadow-zinc-950/5">
-            <CardHeader className="pb-3">
-              <CardDecorator>
-                <Sparkles className="size-6" aria-hidden />
-              </CardDecorator>
-
-              <h3 className="mt-6 font-medium">Powered By AI</h3>
-            </CardHeader>
-
-            <CardContent>
-              <p className="mt-3 text-sm">
-                Elements to functionality, you have complete control to create a
-                unique experience.
-              </p>
-            </CardContent>
-          </Card>
+              <CardContent>
+                <p className="text-sm">
+                  {funcionalidade.descricao}
+                </p>
+              </CardContent>
+            </Card>
+          ))}
         </div>
       </div>
     </section>

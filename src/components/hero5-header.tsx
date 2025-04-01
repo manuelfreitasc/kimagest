@@ -10,7 +10,9 @@ const menuItems = [
   { name: "Serviços", href: "/servicos" },
  // { name: "Solução", href: "#link" },
   { name: "Preços", href: "/pricing" },
+ // { name: "Demonstração", href: "/demo" },
   { name: "Sobre", href: "/about" },
+  { name: "Contactos", href: "/contacts" },
 ];
 
 export const HeroHeader = () => {
