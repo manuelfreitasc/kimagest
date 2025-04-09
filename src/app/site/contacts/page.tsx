@@ -1,3 +1,5 @@
+"use client"
+
 import { Card } from '../../../components/ui/card'
 import { Input } from '../../../components/ui/input'
 import { Textarea } from '../../../components/ui/textarea'
@@ -5,10 +7,15 @@ import { Button } from '../../../components/ui/button'
 import { Label } from '../../../components/ui/label'
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '../../../components/ui/select'
 import Link from 'next/link'
+import { motion } from "motion/react";
 
 export default function ContactSection() {
     return (
-        <section className="py-32">
+        <motion.section 
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+         className="py-32">
             <div className="mx-auto max-w-4xl px-4 lg:px-0">
                 <h1 className="mb-12 text-center text-4xl font-semibold lg:text-5xl">Fale Conosco</h1>
 
@@ -114,6 +121,6 @@ export default function ContactSection() {
                     </Card>
                 </form>
             </div>
-        </section>
+        </motion.section>
     )
 }

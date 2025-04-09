@@ -5,14 +5,15 @@ import { Menu, X } from "lucide-react";
 import { Button } from "../components/ui/button";
 import React from "react";
 import { cn } from "../lib/utils";
+import { ModeToggle } from "./theme-toogle";
 
 const menuItems = [
-  { name: "Serviços", href: "/servicos" },
+  { name: "Serviços", href: "/#servicos" },
  // { name: "Solução", href: "#link" },
-  { name: "Preços", href: "/pricing" },
+  { name: "Preços", href: "/#pricing" },
  // { name: "Demonstração", href: "/demo" },
-  { name: "Sobre", href: "/about" },
-  { name: "Contactos", href: "/contacts" },
+  { name: "Sobre", href: "/#about" },
+  { name: "Contactos", href: "/site/contacts" },
 ];
 
 export const HeroHeader = () => {
@@ -90,6 +91,7 @@ export const HeroHeader = () => {
                 </ul>
               </div>
               <div className="flex w-full flex-col space-y-3 sm:flex-row sm:gap-3 sm:space-y-0 md:w-fit">
+                <ModeToggle />
                 <Button
                   asChild
                   variant="outline"

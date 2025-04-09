@@ -1,4 +1,4 @@
-import YouTubePlayer from "../../../components/YouTubePlayer";
+import YouTubePlayer from "../../../../components/YouTubePlayer";
 
 export default function DemoPage() {
   return (

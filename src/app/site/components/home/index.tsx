@@ -1,11 +1,14 @@
+"use client"
+
 import React from "react";
 import { Mail, SendHorizonal } from "lucide-react";
-import { Button } from "../../../components/ui/button";
-import { AnimatedGroup } from "../../../components/motion-primitives/animated-group";
-import { LogoCloud } from "../../../components/logo-cloud";
+import { Button } from "../../../../components/ui/button";
+import { AnimatedGroup } from "../../../../components/motion-primitives/animated-group";
+import { LogoCloud } from "../../../../components/logo-cloud";
 import Image from "next/image";
-import { TextEffect } from "../../../components/ui/text-effect";
+import { TextEffect } from "../../../../components/ui/text-effect";
 import YouTubePlayer from "@/components/YouTubePlayer";
+import { motion } from "motion/react";
 
 const transitionVariants = {
   item: {
@@ -30,7 +33,11 @@ const transitionVariants = {
 export default function Home() {
   return (
     <>
-      <main className="overflow-hidden">
+      <motion.section
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+       id="home" className="overflow-hidden">
         <div
           aria-hidden
           className="absolute inset-0 isolate z-10 hidden opacity-65 contain-strict lg:block"
@@ -142,7 +149,7 @@ export default function Home() {
           </div>
         </section>
         <LogoCloud />
-      </main>
+      </motion.section>
     </>
   );
 }

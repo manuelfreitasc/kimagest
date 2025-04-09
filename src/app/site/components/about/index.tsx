@@ -1,10 +1,19 @@
-import { Button } from "../../../components/ui/button";
+"use client"
+
+import { Button } from "../../../../components/ui/button";
 import { ChevronRight } from "lucide-react";
+import { motion } from "motion/react";
 import Link from "next/link";
 
-export default function ContentSection() {
+export default function About() {
   return (
-    <section className="py-16 md:pt-60">
+    <motion.section
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+      id="about"
+      className="py-16 md:pt-60"
+    >
       <div className="mx-auto max-w-5xl px-6">
         <div className="grid gap-6 md:grid-cols-2 md:gap-12">
           <h2 className="text-4xl font-medium">
@@ -35,6 +44,6 @@ export default function ContentSection() {
           </div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }

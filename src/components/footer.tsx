@@ -2,13 +2,14 @@ import { Logo } from '../components/logo'
 import Link from 'next/link'
 
 const menuItems = [
-    { name: "Serviços", href: "/servicos" },
+    { name: "Serviços", href: "/#servicos" },
    // { name: "Solução", href: "#link" },
-    { name: "Preços", href: "/pricing" },
-    { name: "Sobre", href: "/about" },
-    { name: "Contactos", href: "/contacts" },
+    { name: "Preços", href: "/#pricing" },
+   // { name: "Demonstração", href: "/demo" },
+    { name: "Sobre", href: "/#about" },
+    { name: "Contactos", href: "/site/contacts" },
   ];
-
+  
 export default function FooterSection() {
     return (
         <footer className="py-16 md:py-32">

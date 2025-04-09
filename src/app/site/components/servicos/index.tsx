@@ -1,5 +1,8 @@
-import { Card, CardContent, CardHeader } from "../../../components/ui/card";
+"use client"
+
+import { Card, CardContent, CardHeader } from "../../../../components/ui/card";
 import { Settings2, Sparkles, Zap, Users, UserPlus, PiggyBank, FileText, FileSpreadsheet, BarChart } from "lucide-react";
+import { motion } from "motion/react";
 import { ReactNode } from "react";
 
 // Array de funcionalidades principais
@@ -38,7 +41,10 @@ const funcionalidadesPrincipais = [
 
 export default function Features() {
   return (
-    <section
+    <motion.section
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    transition={{ duration: 1 }}
       id="servicos"
       className="bg-zinc-50 py-16 md:py-32 dark:bg-transparent "
     >
@@ -71,7 +77,7 @@ export default function Features() {
           ))}
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }
 
