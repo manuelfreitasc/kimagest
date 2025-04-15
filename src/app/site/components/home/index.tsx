@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import React from "react";
 import { Mail, SendHorizonal } from "lucide-react";
@@ -9,6 +9,7 @@ import Image from "next/image";
 import { TextEffect } from "../../../../components/ui/text-effect";
 import YouTubePlayer from "@/components/YouTubePlayer";
 import { motion } from "motion/react";
+import Link from "next/link";
 
 const transitionVariants = {
   item: {
@@ -34,10 +35,12 @@ export default function Home() {
   return (
     <>
       <motion.section
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 1 }}
-       id="home" className="overflow-hidden">
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+        id="home"
+        className="overflow-hidden"
+      >
         <div
           aria-hidden
           className="absolute inset-0 isolate z-10 hidden opacity-65 contain-strict lg:block"
@@ -86,29 +89,11 @@ export default function Home() {
                 className="mt-12"
               >
                 <form action="" className="mx-auto max-w-sm">
-                  <div className="bg-background has-[input:focus]:ring-muted relative grid grid-cols-[1fr_auto] items-center rounded-[calc(var(--radius)+0.5rem)] border pr-2 shadow shadow-zinc-950/5 has-[input:focus]:ring-2">
-                    <Mail className="pointer-events-none absolute inset-y-0 left-4 my-auto size-4" />
-
-                    <input
-                      placeholder="Seu endereço de e-mail"
-                      className="h-12 w-full bg-transparent pl-12 focus:outline-none"
-                      type="email"
-                    />
-
-                    <div className="md:pr-1.5 lg:pr-0">
-                      <Button
-                        aria-label="submit"
-                        size="sm"
-                        className="rounded-(--radius)"
-                      >
-                        <span className="hidden md:block">Cadastre-se</span>
-                        <SendHorizonal
-                          className="relative mx-auto size-5 md:hidden"
-                          strokeWidth={2}
-                        />
-                      </Button>
-                    </div>
-                  </div>
+                  <Button asChild size="lg">
+                    <Link href="https://gest.kima-solucoes.com/">
+                      <span className="btn-label">Comece a Criar</span>
+                    </Link>
+                  </Button>
                 </form>
               </AnimatedGroup>
             </div>

@@ -1,4 +1,5 @@
 import { InfiniteSlider } from "../components/motion-primitives/infinite-slider";
+import { ImageCompany } from "./companies";
 import { ProgressiveBlur } from "./motion-primitives/progressive-blur";
 
 export const LogoCloud = () => {
@@ -12,17 +13,8 @@ export const LogoCloud = () => {
             </p>
           </div>
           <div className="relative py-6 md:w-[calc(100%-11rem)]">
-            <InfiniteSlider speedOnHover={20} speed={40} gap={112}>
-              <div className="flex">LUMA</div>
-
-              <div className="flex">LUMA2</div>
-              <div className="flex">LUMA3</div>
-              <div className="flex">LUMA4</div>
-              <div className="flex">LUMA5</div>
-              <div className="flex">LUMA6</div>
-              <div className="flex">LUMA7</div>
-
-              <div className="flex">LUMA8</div>
+            <InfiniteSlider speedOnHover={20} speed={100} gap={20}>
+              <ImageCompany />
             </InfiniteSlider>
 
             <div className="bg-linear-to-r from-background absolute inset-y-0 left-0 w-20"></div>

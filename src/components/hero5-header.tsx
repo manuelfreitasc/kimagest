@@ -98,7 +98,7 @@ export const HeroHeader = () => {
                   size="sm"
                   className={cn(isScrolled && "lg:hidden")}
                 >
-                  <Link href="#">
+                 <Link href="https://gest.kima-solucoes.com/">
                     <span>Login</span>
                   </Link>
                 </Button>
@@ -107,7 +107,7 @@ export const HeroHeader = () => {
                   size="sm"
                   className={cn(isScrolled && "lg:hidden")}
                 >
-                  <Link href="#">
+                 <Link href="https://gest.kima-solucoes.com/nova/conta">
                     <span>Cadastre-se</span>
                   </Link>
                 </Button>
@@ -116,7 +116,7 @@ export const HeroHeader = () => {
                   size="sm"
                   className={cn(isScrolled ? "lg:inline-flex" : "hidden")}
                 >
-                  <Link href="#">
+                  <Link href="https://gest.kima-solucoes.com/nova/conta">
                     <span>Cadastre-se</span>
                   </Link>
                 </Button>
