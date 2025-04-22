@@ -26,7 +26,7 @@ export default function Page() {
       <Home />
       <Features />
       <Pricing />
-      <About />
+      {/* <About /> */}
     </>
   );
 }

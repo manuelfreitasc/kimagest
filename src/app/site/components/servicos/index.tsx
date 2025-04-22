@@ -10,32 +10,32 @@ const funcionalidadesPrincipais = [
   {
     titulo: "Gestão de Utilizadores",
     descricao: "Permite administrar acessos e permissões dos colaboradores, garantindo a segurança das informações.​",
-    icone: <Users className="size-6" aria-hidden />
+    icone: <Users className="size-6 text-primary" aria-hidden />
   },
   {
     titulo: "Gestão de Clientes",
     descricao: "Facilita o cadastro e acompanhamento dos clientes, centralizando informações essenciais para um atendimento eficaz.​",
-    icone: <UserPlus className="size-6" aria-hidden />
+    icone: <UserPlus className="size-6 text-primary" aria-hidden />
   },
   {
     titulo: "Gestão de Caixa",
     descricao: "Oferece controle detalhado das entradas e saídas financeiras, auxiliando no monitoramento do fluxo de caixa da empresa.​",
-    icone: <PiggyBank className="size-6" aria-hidden />
+    icone: <PiggyBank className="size-6 text-primary" aria-hidden />
   },
   {
     titulo: "Emissão de Documentos Fiscais",
     descricao: "Capacita a emissão de diversos documentos, tais como: Factura, Factura-Recibo, Nota de Crédito, Factura-Proforma.​",
-    icone: <FileText className="size-6" aria-hidden />
+    icone: <FileText className="size-6 text-primary" aria-hidden />
   },
   {
     titulo: "Emissão de Ficheiro SAFT",
     descricao: "Gera o ficheiro SAFT (Standard Audit File for Tax Purposes), facilitando a comunicação de dados fiscais às autoridades tributárias.​",
-    icone: <FileSpreadsheet className="size-6" aria-hidden />
+    icone: <FileSpreadsheet className="size-6 text-primary" aria-hidden />
   },
   {
     titulo: "Emissão de Relatórios",
     descricao: "Disponibiliza relatórios detalhados sobre as operações da empresa, fornecendo insights valiosos para a tomada de decisões estratégicas.",
-    icone: <BarChart className="size-6" aria-hidden />
+    icone: <BarChart className="size-6  text-primary" aria-hidden />
   }
 ];
 

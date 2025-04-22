@@ -39,7 +39,7 @@ export default function Home() {
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
         id="home"
-        className="overflow-hidden"
+        className="overflow-hidden bg-[#091426]"
       >
         <div
           aria-hidden
@@ -56,7 +56,7 @@ export default function Home() {
                 preset="fade-in-blur"
                 speedSegment={0.3}
                 as="h1"
-                className="text-balance text-4xl font-medium sm:text-5xl md:text-6xl"
+                className="text-balance text-4xl text-white font-medium sm:text-5xl md:text-6xl"
               >
                 A porta de entrada para uma gestão eficiente
               </TextEffect>
@@ -66,7 +66,7 @@ export default function Home() {
                 speedSegment={0.3}
                 delay={0.5}
                 as="p"
-                className="mx-auto mt-12 max-w-2xl text-pretty text-lg"
+                className="mx-auto mt-12 max-w-2xl text-white text-pretty text-lg"
               >
                 O Kimagest oferece ferramentas avançadas e personalizáveis para
                 otimizar a gestão do seu negócio. Controle processos, visualize
@@ -112,8 +112,8 @@ export default function Home() {
                 }}
               >
                 <div className=" aspect-3/2 relative mx-auto lg:w-2/3">
-                  <div className="z-50 bg-linear-to-b to-background from-background absolute inset-0 via-transparent"></div>
-                  <div className="z-50 bg-linear-to-l to-background from-background absolute inset-0 via-transparent"></div>
+                  <div className="z-50 bg-linear-to-b to-[#091426] from-[#091426] absolute inset-0 via-[#09142698]"></div>
+                  <div className="z-50 bg-linear-to-l to-[#091426] from-[#091426] absolute inset-0 via-[#09142698]"></div>
                   {/* <Image
                     src="https://res.cloudinary.com/dg4jhba5c/image/upload/v1741605545/phone-backgroudn_xqgg5g.jpg"
                     alt="Phone Background"
