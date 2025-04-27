@@ -8,7 +8,7 @@ import { cn } from "../lib/utils";
 import { ModeToggle } from "./theme-toogle";
 
 const menuItems = [
-  { name: "Serviços", href: "/#servicos" },
+  { name: "Funcionalidades", href: "/#servicos" },
   // { name: "Solução", href: "#link" },
   { name: "Preços", href: "/#pricing" },
   // { name: "Demonstração", href: "/demo" },

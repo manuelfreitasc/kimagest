@@ -2,7 +2,7 @@ import { Logo } from '../components/logo'
 import Link from 'next/link'
 
 const menuItems = [
-    { name: "Serviços", href: "/#servicos" },
+    { name: "Funcionalidades", href: "/#servicos" },
    // { name: "Solução", href: "#link" },
     { name: "Preços", href: "/#pricing" },
    // { name: "Demonstração", href: "/demo" },

@@ -97,40 +97,35 @@ export default function Home() {
                 </form>
               </AnimatedGroup>
             </div>
-            <div className="mx-auto md:-mt-20 lg:-mt-40">
-              <AnimatedGroup
-                variants={{
-                  container: {
-                    visible: {
-                      transition: {
-                        staggerChildren: 0.05,
-                        delayChildren: 0.75,
-                      },
+            <AnimatedGroup
+              variants={{
+                container: {
+                  visible: {
+                    transition: {
+                      staggerChildren: 0.05,
+                      delayChildren: 0.75,
                     },
                   },
-                  ...transitionVariants,
-                }}
-              >
-                <div className=" aspect-3/2 relative mx-auto lg:w-2/3">
-                  <div className="z-50 bg-linear-to-b to-[#091426] from-[#091426] absolute inset-0 via-[#09142698]"></div>
-                  <div className="z-50 bg-linear-to-l to-[#091426] from-[#091426] absolute inset-0 via-[#09142698]"></div>
-                  {/* <Image
-                    src="https://res.cloudinary.com/dg4jhba5c/image/upload/v1741605545/phone-backgroudn_xqgg5g.jpg"
-                    alt="Phone Background"
-                    width="6240"
-                    height="4160"
-                  /> */}
-
-                  <YouTubePlayer
-                    videoId="dQw4w9WgXcQ" // Substitua pelo ID do vídeo real do Kimagest no YouTube
-                    title=""
-                    description=""
-                    autoPlay={true}
-                    muted={true}
+                },
+                ...transitionVariants,
+              }}
+            >
+              <div className="relative -mr-56 mt-8 overflow-hidden  sm:mr-0 sm:mt-12 md:mt-20">
+                <div
+                  aria-hidden
+                  className="bg-linear-to-b to-[#091426] absolute inset-0 z-10 from-transparent from-35%"
+                />
+                <div className="inset-shadow-2xs ring-[#091426] inset-shadow-white/20 bg-[#091426] relative mx-auto max-w-6xl overflow-hidden rounded-2xl border border-white/5 p-4  ring-1">
+                  <Image
+                    className="bg-background aspect-15/8 relative  rounded-2xl"
+                    src="/kimagest.jpeg"
+                    alt="app screen"
+                    width="2700"
+                    height="1440"
                   />
                 </div>
-              </AnimatedGroup>
-            </div>
+              </div>
+            </AnimatedGroup>
           </div>
         </section>
         <LogoCloud />

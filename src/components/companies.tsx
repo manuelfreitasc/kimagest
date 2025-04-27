@@ -17,7 +17,7 @@ export const ImageCompany = () => {
       {parceiros.map((image, index) => (
         <img
           key={index}
-          className="h-24 w-fit dark:invert"
+          className="h-24  max-[400]:h-16 w-fit dark:invert"
           src={`parceiros/${image}`} // Replace with the correct path to your images
           alt={`Parceiro ${index + 1}`}
           height="20"
