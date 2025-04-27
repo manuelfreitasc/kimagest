@@ -6,16 +6,9 @@ import { Button } from "../components/ui/button";
 import React from "react";
 import { cn } from "../lib/utils";
 import { ModeToggle } from "./theme-toogle";
+import { menuItems } from "@/lib/menus";
 
-const menuItems = [
-  { name: "Funcionalidades", href: "/#servicos" },
-  // { name: "Solução", href: "#link" },
-  { name: "Preços", href: "/#pricing" },
-  // { name: "Demonstração", href: "/demo" },
- /*  { name: "Sobre", href: "/#about" }, */
-  { name: "Contactos", href: "/site/contacts" },
-  { name: "Apreder a usar", href: "/site/tuturias" },
-];
+
 
 export const HeroHeader = () => {
   const [menuState, setMenuState] = React.useState(false);

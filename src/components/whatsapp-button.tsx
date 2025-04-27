@@ -2,12 +2,12 @@
 
 export function WhatsappButton() {
   // Número de WhatsApp para suporte (substitua pelo número real)
-  const phoneNumber = "5511999999999"
+  const phoneNumber = "244950513180"
   const message = encodeURIComponent("Olá! Preciso de ajuda com o sistema.")
 
   const handleClick = () => {
-   /*  window.open(`https://wa.me/${phoneNumber}?text=${message}`, "_blank") */
-    window.open(`https://chat.whatsapp.com/EedXIXquzD34UmnlNkpGNw`, "_blank")
+   window.open(`https://wa.me/${phoneNumber}?text=${message}`, "_blank")
+   /*  window.open(`https://chat.whatsapp.com/EedXIXquzD34UmnlNkpGNw`, "_blank") */
   }
 
   return (
