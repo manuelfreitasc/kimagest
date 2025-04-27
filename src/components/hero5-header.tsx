@@ -14,6 +14,7 @@ const menuItems = [
   // { name: "Demonstração", href: "/demo" },
  /*  { name: "Sobre", href: "/#about" }, */
   { name: "Contactos", href: "/site/contacts" },
+  { name: "Apreder a usar", href: "/site/tuturias" },
 ];
 
 export const HeroHeader = () => {
